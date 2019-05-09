@@ -20,7 +20,34 @@ body {
     background: rgba(0, 0, 0, .7);
 }
 
-
+@keyframes rotateLoading {
+    from {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes pillarLoading {
+    0%,
+    100% {
+        background: lightgreen;
+    }
+    50% {
+        transform: scaleY(1.75);
+        background: lightblue;
+    }
+}
+@keyframes pointLoading {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(.3);
+        opacity: 0.5;
+    }
+}
 
 /* 四分之一边框 loading */
 .loading {
